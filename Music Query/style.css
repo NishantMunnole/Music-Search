@@ -1,0 +1,83 @@
+#results{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.image{
+    background-image: url('https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/46/fe/4a/46fe4a39-feb4-7b8b-97b9-0187d49a46bd/19UMGIM53914.rgb.jpg/400x400cc.jpg');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 5px 5px;
+    
+}
+
+
+.image:hover {
+    background-image:none !important;
+    background: #161623;
+}
+
+.image .song-title{
+    color: white;
+    text-align: center;
+    /* padding: 5px 5px; */
+    font-weight: 500;
+    font-size: 1.5rem;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.image .artist-name{
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    pointer-events: none;
+    padding: 5px 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.image:hover .song-title{
+    transform: translateY(10px);
+    opacity: 1 !important;
+}
+
+.image:hover .artist-name{
+    transform: translateY(50px);
+    opacity: 1 !important;
+}
+
+
+.artists img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.artists p{
+    padding: 20px 10px;
+    font-size: large;
+    font-weight: 500;
+}
+
+#artist-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#img-link{
+    text-decoration: none;
+}
+
+#artist{
+    background-color: brown;
+}
